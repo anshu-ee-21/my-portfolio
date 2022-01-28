@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title> MY PORTFOLIO</title>
+</head>
+<body>
+<header id="home">
+  <nav class="navbar">
+    <div class="logo_header">
+      <a href="#" class="logo" style="color: rgb(0, 0, 0, 0.6); text-decoration: none;"> </a>
+      <button class="navbar_toggle">
+        <i class="fa fa-bars"></i>
+      </button>
+    </div>
+    <ul class="main_nav">
+      <li>
+        <a href="#home" class="nav_links">HOME</a>
+      </li>
+      <li>
+        <a href="#about" class="nav_links" style="margin-left: 22px;">ABOUT</a>
+      </li>
+      <li>
+        <a href="#portfolio" class="nav_links" style="margin-left: 22px;">PERFORMANCE</a>
+      </li>
+      <li>
+        <a href="#contact" class="nav_links" style="margin-left: 22px;">CONTACT</a>
+      </li>
+    </ul>
+  </nav>
+  <script>
+    const navToggle = document.querySelector(".navbar_toggle");
+const links = document.querySelector(".main_nav");
+
+navToggle.addEventListener('click', function(){
+    links.classList.toggle("show_nav");
+})
+</script>
+  <div class="sec1">
+    <div class="im1"><img src="my logo.jpeg" alt=""></div>
+    <div class="Intro" style="padding-left:75px;">
+    <h2 class="name" style="padding-top: 325px;">ANSHU AGARWAL</h2>
+    <h2 style="color: black;">A STUDENT OF NIT DURGAPUR</h2>
+    <div style="margin-right: 20px;">
+      <a href="https://www.facebook.com/" style="color: black;" target="_blank"><i class="fa fa-facebook"></i></a>
+      <a href="https://www.instagram.com/" style="color: black;" target="_blank"><i class="fa fa-instagram"></i></a>
+      <a href="https://twitter.com/" style="color: black;" target="_blank"><i class="fa fa-twitter"></i></a>
+      <a href="https://www.linkedin.com/" style="color: black;" target="_blank"><i class="fa fa-linkedin"></i></a>
+      <a href="https://mail.google.com/mail/" style="color: black;" target="_blank"><i class="fa fa-google"></i></a>
+      </div>
+    </div>
+  </div>
+    <p style="margin-top: 300px; color: black;">.</p>
+</header>
+<div id="about" class="abcd">
+  <h2 style="text-align: center;">ABOUT</h2>
+  <br>
+  <p style="padding-left: 50px; padding-right: 50px;"><i>
+    Hello readers, this is ANSHU AGARWAL, a first year undergraduate student, currently pursuing B.Tech in Electrical Engineering at NIT Durgapur. Born in 2002 in Hooghly district of West Bengal, I took up my secondary and senior secondary education from H.M. Education Centre, Hooghly and completed them in 2019 and 2021 respectively.</p>
+  <p style="padding-left: 50px; padding-right: 50px;"> I am interested in reading books. I am an enthusiastic learner and dedicate my strengths to perform my tasks efficiently. I always try to be punctual and keep my work organised. Also, I believe in teamwork.  Division of work into team members leads to innovation, better ideas and improved results. </p>
+    <p style="padding-left: 50px; padding-right: 50px;"> To conclude with, I’m a person who is positive about every aspect of life. A selfless attitude towards anyone whom I come across with. I’m fortunate to have all my family and friends who are encouraging and open-minded. May god provide them a long life!
+    May everyone reading this be safe, happy and successful in every course of life!!</i></p>
+    <br><br><br>
+  </div>
+  <div style="background-image: url('bg2.jpg'); background-repeat: no-repeat; background-size: cover;">
+    <div class="slideshow-container" style="z-index: 1;">
+      
+      <div class="mySlides fade">
+        <img src="https://cache.careers360.mobi/media/schools/social-media/media-gallery/21034/2019/5/21/School%20building.JPG" style="width:80%; height: 500px;border-radius: 0px;border:4px solid black">
+        <div class="text">HM EDUCATION CENTRE</div>
+      </div>
+      <div class="mySlides fade">
+        <img src="https://media-exp1.licdn.com/dms/image/C561BAQEVzVocHgM1wQ/company-background_10000/0/1593894239726?e=2159024400&v=beta&t=M1k6MI1k_fyMfX8AB9WC0So3JwXrw5VJpKv9KFLBorQ" style="width:80%; height: 500px;border-radius: 0px;border:4px solid black">
+        <div class="text">NIT DURGAPUR</div>
+      </div>
+      <div class="mySlides fade">
+        <img src="edc logo.png" style="width:80%; height: 500px;border-radius: 0px;border:4px solid black">
+        <div class="text">ENTREPRENEURSHIP DEVELOPMENT CELL</div>
+      </div>
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+    <br>
+    <div style="text-align:center">
+      <span class="dot" onclick="currentSlide(1)"></span>
+      <span class="dot" onclick="currentSlide(2)"></span>
+      <span class="dot" onclick="currentSlide(3)"></span>
+    </div>
+  </div>
+    <script>
+      var slideIndex = 1;
+      showSlides(slideIndex);
+      function plusSlides(n) {
+        showSlides(slideIndex += n);
+      }
+      function showSlides() {
+     var i;
+     var slides = document.getElementsByClassName("mySlides");
+     var dots = document.getElementsByClassName("dot");
+     for (i = 0; i < slides.length; i++) {
+     slides[i].style.display = "none";  
+     }
+     slideIndex++;
+     if (slideIndex > slides.length) {slideIndex = 1}    
+     for (i = 0; i < dots.length; i++) {
+     dots[i].className = dots[i].className.replace(" active", "");
+     slides[slideIndex-1].style.display = "block";  
+    }
+    setTimeout(showSlides, 7000);
+    dots[slideIndex-1].className += " active";
+    }
+  </script>
+
+<div id="portfolio" style="background-image:url('bg0.jpg'); background-repeat: no-repeat;background-size: cover;">
+  <div class="cards">
+    <div class="card">
+      <img src="https://www.pngitem.com/pimgs/m/116-1165792_diploma-clipart-transparent-cartoons-graduation-certificate-png-png.png" alt="" style="width:100px; height: 100px; border-radius: 50%; border:2px solid black">
+      <br><br>
+      <div class="container">
+        <h4 style="color: black; font-size: 30px;"><b>QUALIFICATIONS</b></h4> 
+        <p style="color: black;">
+          <ul style="color: black; font-size: 22px;font-size: 22px; text-align: justify; padding-left: 10px; padding-right: 10px;">
+            <br>
+            <li>Passed 10th boards from CBSE with XX %</li>
+            <li>Passed 12th boards from CBSE with XX %</li>
+            <li>Cleared WBJEE with a rank of XXXX</li>
+            <li>Cleared JEE Mains with AIR XXXX</li>
+            <li>Cleared JEE Advanced with AIR XXXX</li>
+        </ul>
+        <br><br><br><br><br>
+        </p> 
+      </div>
+    </div>
+    <div class="card">
+      <img src="https://static8.depositphotos.com/1338574/828/i/950/depositphotos_8284456-stock-photo-gold-trophy.jpg" alt="" style="width:100px; height: 100px; border-radius: 50%; border:2px solid black">
+      <br><br>
+      <div class="container">
+        <h4 style="color: black; font-size: 30px;"><b>ACHIEVEMENTS</b></h4> 
+        <p style="color: black;">
+          <ul style="color: black; font-size: 22px; text-align: justify; padding-left: 10px; padding-right: 10px;">
+            <br>
+            <li>Got XXX Award for Best Student of Academic Session 2015-16</li>
+        <li>Got XXX Award for Full attendance in Academic Session 2017-2018</li>    
+        <li>Got the school topper award in the Academic Year 2018-2019</li>
+        <li>Won the inter school throwball competition with me being the captain in the Academic Session 2019-2020</li>
+        </ul>
+        <br><br><br><br><br>
+        </p> 
+      </div>
+    </div>
+    </div>
+</div>
+</div>
+<div id="contact" class="container">    
+<div class="cont">
+  <div style="text-align:center" >
+      <h2 style="font-size: 40px;color: black;">CONTACT</h2>
+    </div> 
+<div class="column" style="text-align: center; color: black;font-weight: bold;">
+   <br> <label for="fname" style="font-size: 25px;">First Name:</label>
+    <input type="text" id="fname" name="firstname" style="background-color: transparent; border: 2px solid white;font-size:15px; font-weight: bold;" placeholder=" "> </p>
+    <p><label for="lname" style="font-size: 25px;">Last Name:</label>
+    <input type="text" id="lname" name="lastname" style="background-color: transparent; border: 2px solid white;font-size:15px; font-weight: bold;" placeholder=" "></p>
+    <p><label for="country" style="font-size: 25px;">State & Country:</label>
+      <input type="text" id="lname" name="lastname" style="background-color: transparent; border: 2px solid white;font-size:15px; font-weight: bold;" placeholder=" "></p>
+    <p><label for="subject" style="font-size: 25px;">Contact:</label>
+      <input type="text" id="fname" name="firstname" style="background-color: transparent; border: 2px solid white;font-size:15px; font-weight: bold;" placeholder=" "> </p>
+    <p><input type="submit" value="Submit" style="font-size: 15px;"></p>
+</div>
+</div>
+</div>
+</div>
+<a href="" class="back-to-top" style="display: inline; background-color: black; color: white;"><i class="fa fa-chevron-up"></i></a>
+<footer>
+<div class="bottomnav">
+  <a class="copyright">&copy; Copyright By XYZ</a>
+  <div class="bottomnav-right">
+    <a href="#">Sitemap</a>
+    <a href="#">Email</a>
+    <a href="#">Website</a>
+  </div>
+</div>
+</footer>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script>  
+   $(window).on("scroll", function() {
+      if($(window).scrollTop() > 800) {
+          $(".navbar").addClass("on-scroll");
+          $(".logo_header").addClass("on-scroll");
+      } else {
+         $(".navbar").removeClass("on-scroll");
+         $(".logo_header").removeClass("on-scroll");
+      }
+  });</script>
+</body>
+</html>
